@@ -1,0 +1,199 @@
+A _____ is a device that forwards packets between networks by processing the routing information included in the packet.
+ a. bridge
+ b. firewall
+ c. router
+ d. all of the mentioned
+Accepted Answers:
+c. router
+
+The default connection type used by HTTP is _____
+ a. Persistent
+ b. Non-persistent
+ c. Either of the mentioned
+ d. None of the mentioned
+
+Accepted Answers:
+a. Persistent
+
+The HTTP request message is sent in ____ part of three-way handshake.
+ a. First
+ b. Second
+ c. Third
+ d. None of the mentioned
+
+Accepted Answers:
+c. Third
+
+In the process of fetching a web page from a server the HTTP request/response takes ______ RTTs.
+ a. 2
+ b. 1
+ c. 4
+ d. 4
+
+Accepted Answers:
+b. 1
+
+The values GET, POST, HEAD etc are specified in ____ of HTTP message
+ a. Request line
+ b. Header line
+ c. Status line
+ d. Entity body
+
+Accepted Answers:
+a. Request line
+
+How long is an IPv6 address?
+ a. 32 bits
+ b. 128 bytes
+ c. 64 bits
+ d. 128 bits
+
+Accepted Answers:
+d. 128 bits
+
+What flavor of Network Address Translation can be used to have one IP address allow many users to connect to the global Internet?
+ a. NAT
+ b. Static
+ c. Dynamic
+ d. PAT
+
+Accepted Answers:
+d. PAT
+
+Which of the following is the valid host range for the subnet on which the IP address 192.168.168.188 255.255.255.192 resides?
+ a. 192.168.168.129-190
+ b. 192.168.168.129-191
+ c. 192.168.168.128-190
+ d. 192.168.168.128-192
+
+Accepted Answers:
+a. 192.168.168.129-190
+
+Where is a hub specified in the OSI model?
+ a. Session layer
+ b. Physical layer
+ c. Data Link layer
+ d. Application layer
+
+Accepted Answers:
+b. Physical layer
+
+Which class of IP address has the most host addresses available by default?
+ a. A
+ b. B
+ c. C
+ d. A and B
+
+Accepted Answers:
+a. A
+
+Hub is _________ device and switch is a __________ device
+ a. Unicast, Multicast
+ b. Multicast, Unicast
+ c. Broadcast, Unicast
+ d. Broadcast, Multicast
+
+Accepted Answers:
+c. Broadcast, Unicast
+1 point
+With SQL, how do you select all the records from a table named “Persons” where the value of the column “FirstName” ends with an “a”?
+ a. SELECT * FROM Persons WHERE FirstName=’a’
+ b. SELECT * FROM Persons WHERE FirstName LIKE ‘a%’
+ c. SELECT * FROM Persons WHERE FirstName LIKE ‘%a’
+ d. SELECT * FROM Persons WHERE FirstName=’%a%’
+
+Accepted Answers:
+c. SELECT * FROM Persons WHERE FirstName LIKE ‘%a’
+
+The UNION SQL clause can be used with
+ a. SELECT clause only
+ b. DELETE and UPDATE clauses
+ c. UPDATE clause only
+ d. All of the mentioned
+
+Accepted Answers:
+a. SELECT clause only
+
+Which SQL keyword is used to sort the result-set?
+ a. ORDER BY
+ b. SORT
+ c. ORDER
+ d. SORT BY
+
+Accepted Answers:
+a. ORDER BY
+
+Scripting like JavaScript is designed for following purpose –
+ a. To Execute Query Related to DB on Server
+ b. To Style HTML Pages
+ c. To add interactivity to HTML Pages.
+ d. To Perform Server Side Scripting Operation
+
+Accepted Answers:
+c. To add interactivity to HTML Pages.
+
+
+
+
+
+When a hacker attempts to attack a host via the Internet it is known as
+ a. Remote attack
+ b. Physical access
+ c. Local access
+ d. Internal attack ♀
+ 
+ Which Linux command can be used to view the processes running on a system?
+ a. pview
+ b. ps ♀
+ c. whois
+ d. procview
+ 
+ Which of the following tools are typically used to secure a personal computer/laptop?
+ a. Antivirus ♀
+ b. Port scanner
+ c. Desktop firewall ♀
+ d. All of these
+ 
+ The command “nslookup” can be used to gather information regarding which of the following?
+ a. List of all users in a system
+ b. Host names and IP addresses ♀
+ c. DNS server addresses
+ d. None of these
+ 
+ What port number does HTTPS use?
+ a. 80
+ b. 53
+ c. 443 ♀
+ d. 8080
+ Which of the following are transport layer protocols?
+ a. UDP ♀
+ b. IP
+ c. ICMP
+ d. TCP ♀
+ 
+ Which of the following is/are protocols that work on the data-link layer level?
+ a. Ethernet ♀
+ b. IP
+ c. HTTP
+ d. None of these
+ 
+ In a network, if P is the only packet being transmitted and there was no earlier transmission, which of the following delays could be zero?
+ a. Propagation delay
+ b. Queuing delay ♀
+ c. Transmission delay
+ d. Processing delay
+ 
+ Which of the following devices can be used to increase the span of a network?
+ a. Bridge ♀
+ b. Router ♀
+ c. Hub ♀
+ d. Amplifier
+ 
+ Which of the following best describes data transmission over a fiber-optic cable?
+ a. It is a broadcast connection
+ b. It is a point-to-point connection ♀
+ c. Data are transmitted as voltage pulses
+ d. Data are transmitted as light pulses ♀
+ 
+ 
+

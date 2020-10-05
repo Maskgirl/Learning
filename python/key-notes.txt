@@ -1,0 +1,95 @@
+range() – This returns a list of numbers created using range() function.
+xrange() – This function returns the generator object that can be used to display numbers only by looping. Only particular range is displayed on demand and hence called “lazy evaluation“.
+range() returns – the list as return type.
+xrange() returns – xrange() obj
+♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥
+# Python code to demonstrate range() vs xrange() 
+# on  basis of memory 
+  
+import sys 
+  
+# initializing a with range() 
+a = range(1,10000) 
+  
+# initializing a with xrange() 
+x = xrange(1,10000) 
+  
+# testing the size of a 
+# range() takes more memory 
+print ("The size allotted using range() is : ") 
+print (sys.getsizeof(a)) 
+  
+# testing the size of a 
+# range() takes less memory 
+print ("The size allotted using xrange() is : ") 
+print (sys.getsizeof(x)) 
+Output:
+
+The size allotted using range() is : 
+80064
+The size allotted using xrange() is : 
+40
+♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥
+Problem Statement
+Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given scores. Store them in a list and find the score of the runner-up.
+
+Note
+This is in reference to Python 3
+
+Input Format
+The first line contains n. The second line contains an array A[] of n integers each separated by a space.
+
+Constraints
+
+2 <= n <= 10
+-100 <= A[i] <= 100
+Output Format
+
+Print the runner-up score.
+Sample Input
+
+5
+2 3 6 6 5
+Sample Output
+
+5
+Solution
+We are going to keep logic in main function only such that we are able to build array as we will be getting data from input. You shall create a script.py file and paste the below code in it.
+
+1st line: n = int(input()) This takes input from command line. Please note that input type is going to be in string format and we have to use int() to convert from string to int
+
+2nd line: arr = map(int, input().split()) Now, we are are mapping input(text) to int.
+
+3rd line: arr = list(set(list(arr))) here we are convert array to list and getting its set and then converting to list.
+
+Others: We are sorting the list by using sorted and getting second last element.
+
+Finding 2nd runner up: python
+if __name__=="__main__":
+    n = int(input())
+    arr = map(int, input().split())
+    arr = list(set(list(arr)))
+    ar = len(arr)
+    arr = sorted(arr)
+    print(arr[ar-2])
+    ♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥
+    Converting map to list, tuple, set
+Since map object is an iterator, we can pass it as an argument to the factory methods for creating a list, tuple, set etc.
+
+
+map_iterator = map(to_upper_case, ['a', 'b', 'c'])
+my_list = list(map_iterator)
+print(my_list)
+
+map_iterator = map(to_upper_case, ['a', 'b', 'c'])
+my_set = set(map_iterator)
+print(my_set)
+
+map_iterator = map(to_upper_case, ['a', 'b', 'c'])
+my_tuple = tuple(map_iterator)
+print(my_tuple)
+              output
+ ['A', 'B', 'C']
+{'C', 'B', 'A'}
+('A', 'B', 'C')
+♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥ 
