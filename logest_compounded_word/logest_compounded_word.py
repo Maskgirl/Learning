@@ -16,6 +16,7 @@ class Trie:
         curr = self.head
         if len(word) <= 0 or word[0] not in curr:
             return []
+        
         curr = curr[word[0]]
         start_indeces_of_suffixes = []
         
@@ -23,7 +24,7 @@ class Trie:
             if 'is_end' in curr:
                 start_indeces_of_suffixes.append(i + 1)
                 
-            if word[i+1] not in curr:
+            if word[i + 1] not in curr:
                 break
             
             curr = curr[word[i+1]]
