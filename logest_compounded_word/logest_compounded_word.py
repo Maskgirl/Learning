@@ -14,15 +14,23 @@ class Trie:
 
     def get_start_indeces_of_suffixes(self, word):
         curr = self.head
+        if len(word) <= 0 or word[0] not in curr:
+            return []
+        curr = curr[word[0]]
         start_indeces_of_suffixes = []
-        for i, ch in enumerate(word):
-            if ch not in curr:
-                break
+        
+        for i in range(len(word)-1):
             if 'is_end' in curr:
                 start_indeces_of_suffixes.append(i + 1)
-            curr = curr[ch]
+                
+            if word[i+1] not in curr:
+                break
+            
+            curr = curr[word[i+1]]
+            
         if 'is_end' in curr:
-            start_indeces_of_suffixes.append(i + 1)
+            start_indeces_of_suffixes.append(i + 2)
+            
         return start_indeces_of_suffixes
 
 
@@ -41,8 +49,9 @@ def solve_logest_compound_word(file_path):
         queue = [word]
         while len(queue) > 0:
             suffix = queue.pop()
-            for i in trie.get_start_indeces_of_suffixes(suffix):
-                if i == len(suffix) and i > len(longest_compound_word):
+            indeces = trie.get_start_indeces_of_suffixes(suffix)
+            for i in indeces:
+                if i == len(suffix) and len(word) > len(longest_compound_word) and i != len(word):
                     second_longest_compound_word = longest_compound_word
                     longest_compound_word = word
                     break
