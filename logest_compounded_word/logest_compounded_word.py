@@ -34,7 +34,13 @@ class Trie:
             
         return start_indeces_of_suffixes
 
-
+"""
+We built the trie for given word.
+Loopover each word and repeat the logic. 
+Find valid prifices, and append their suffices to stack so, 
+we can perform the saem logic with them till we found no any valid prifices or 
+suffice become empty string that means we found a combination to divide the word into smaller words.
+"""
 def solve_logest_compound_word(file_path):
     start_time = time.time()
     with open(file_path, 'r') as file:
